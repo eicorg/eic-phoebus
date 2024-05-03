@@ -11,7 +11,7 @@ V="4.7.4-SNAPSHOT"
 
 # figure out the path to the product jar
 if [[ -z "${PHOEBUS_JAR}" ]]; then
-  PHOEBUS_JAR=${TOP}/target/eic-product-${V}.jar
+  PHOEBUS_JAR=${TOP}/target/eic-phoebus-${V}.jar
 fi
 
 # figure out the path to the configuration settings
