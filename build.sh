@@ -48,8 +48,8 @@ cd $TOP/lib/phoebus
 # Build the documentation and help
 mvn clean verify -P sphinx -N
 # Build the common phoebus binaries
-mvn clean install -DskipTests=true
+#mvn clean install -DskipTests=true
 
 # Build nsls2 product products
-cd $TOP/products
+cd $TOP
 mvn clean install -DskipTests=true -Ddocs=$TOP/lib/phoebus/docs
