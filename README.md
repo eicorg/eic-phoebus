@@ -6,7 +6,7 @@ EIC phoebus product
 Clone the eic-phoebus product repo to the installation location.
 
 ```
-git clone https://github.com/shroffk/nsls2-phoebus
+git clone https://github.com/eicorg/eic-phoebus
 ./build.sh
 ```
 
