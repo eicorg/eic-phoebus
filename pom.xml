@@ -2,40 +2,40 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.phoebus</groupId>
-  <version>4.7.4-SNAPSHOT</version>
+  <version>5.0.0</version>
   <artifactId>eic-phoebus</artifactId>
   <name>EIC Phoebus product</name>
   <dependencies>
     <dependency>
       <groupId>org.phoebus</groupId>
       <artifactId>product</artifactId>
-      <version>4.7.4-SNAPSHOT</version>
+      <version>5.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.phoebus</groupId>
       <artifactId>app-trends-rich-adapters</artifactId>
-      <version>4.7.4-SNAPSHOT</version>
+      <version>5.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.phoebus</groupId>
       <artifactId>app-utility-preference-manager</artifactId>
-      <version>4.7.4-SNAPSHOT</version>
+      <version>5.0.0</version>
     </dependency>
 
     <dependency>
       <groupId>org.phoebus</groupId>
       <artifactId>app-logbook-olog-client-es</artifactId>
-      <version>4.7.4-SNAPSHOT</version>
+      <version>5.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.phoebus</groupId>
       <artifactId>app-logbook-olog-client</artifactId>
-      <version>4.7.4-SNAPSHOT</version>
+      <version>5.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.phoebus</groupId>
       <artifactId>app-logbook-olog-ui</artifactId>
-      <version>4.7.4-SNAPSHOT</version>
+      <version>5.0.0</version>
     </dependency>
 
   </dependencies>
