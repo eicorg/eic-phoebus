@@ -1,4 +1,4 @@
-name: Build
+name: Phoebus build
 
 on:
   push:
@@ -25,8 +25,18 @@ jobs:
         java-version: '17'
         maven-version: '3.9.6'
 
-    - name: Build
-      run: mvn --batch-mode install -DskipTests
+    - name: Checkout Phoebus
+      shell: bash
+      run: |
+        mkdir -p "${GITHUB_WORKSPACE}/lib"
+        git clone --branch v5.0.4 --single-branch https://github.com/ControlSystemStudio/phoebus "${GITHUB_WORKSPACE}/lib/phoebus"
+
+    - name: Build and install Phoebus dependencies
+      working-directory: ${{ github.workspace }}/lib/phoebus
+      run: mvn --batch-mode clean install -DskipTests=true
+
+    - name: Build EIC Phoebus
+      run: mvn --batch-mode clean install -DskipTests=true -Ddocs=${{ github.workspace }}/lib/phoebus/docs
 
     - name: Archive build artifacts
       uses: actions/upload-artifact@v4
