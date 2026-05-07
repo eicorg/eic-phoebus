@@ -35,5 +35,5 @@ local.properties
 
 ### intellij ###
 
-*/.idea/*
+.idea/
 *.iml
